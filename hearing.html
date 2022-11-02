@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Finn's hearing damage demo</title>
+      <style>
+        body { background-color: black; color: #fff6c2; font-family: "Trebuchet MS", Verdana, sans-serif;}
+      </style>
+  </head>
+  <body>
+    <h2>Finn's hearing damage simulator</h2>
+    <p>It's difficult to communicate hearing problems to folks with normal hearing because they don't have a point of reference. Hence, I made this thing.</p>
+    <h3>Instructions</h3>
+      <ol>
+        <li>Download a free decibel (dB) meter for your phone. There are plenty available for Android and iOS. If you're going to use headphones/earbuds for the simulation, make sure the meter will read output to your headphones (not just mic input from your phone's voice mic).</li>
+        <li>Turn the volume all the way down</li>
+        <li>Play the <i>Source</i> track while slowly raising volume until you hit 50 dB</li>
+        <li>Rewind and listen to the clip straight through</li>
+        <li><b>Without adjusting the volume</b>, play the <i>Finn's ears</i> track. You'll hear approximately what my brain does to everything that goes in my ears.</li>
+      </ol>
+      <objectwidth="300"height="50">
+        <paramname="src"value="source.mp3">
+        <paramname="autoplay"value="false">
+        <paramname="controller"value="true">
+        <paramname="bgcolor"value="#FFFFFF">
+      <embedsrc="LINKHERE"autostart="false"loop="false"width="300"height="50"controller="true"bgcolor="#FFFFFF">
+      </object>
+      <objectwidth="300"height="50">
+        <paramname="src"value="finn-ears.mp3">
+        <paramname="autoplay"value="false">
+        <paramname="controller"value="true">
+        <paramname="bgcolor"value="#FFFFFF">
+      <embedsrc="LINKHERE"autostart="false"loop="false"width="300"height="50"controller="true"bgcolor="#FFFFFF">
+      </object>
+    <h3>Caveats & methodology</h3>
+      <p>Tinnitus is phantom noise that the brain creates all by itself so it's very difficult to reproduce accurately. Mine is multitimbral and constantly evolving. The hardest thing to simulate is the white noise. I've used a simple white noise generator here but it's not nearly as complex as what's happening in my head. The frequencies and levels of the pitched feedback (which I've simulated with sine waves at various frequencies) are fairly accurate though.</p>
+      <p>How do I know they're accurate? Here's what I did. First, I set a comfortable output volume for the music. Next, I muted the music and put some EQ on the left channel to compensate for the minor hearing degeneration in that ear. Then I ran my noise generators into the left channel while leaving the right channel silent, and balanced the frequencies and levels of the various tones until I was basically hearing stereo tinnitus. Then I moved all that noise from the left channel to the right. Finally, I adjusted the left and right channel EQs individually to simulate my hearing loss based on my most recent audiology exam (10/31/22).</p>
+      <p><b>Tinnitus is a constant sound.</b> It gets louder or softer throughout the day on its own but it doesn't get louder when the environmental sounds increase. That's why you need to play the simulation at 50dB. If your listening volume is louder than that, the tinnitus will be artificially high relative to the music.</p>
+      <p>And finally, <b>your hearing (probably) isn't perfect</b>! This simulation won't ever put you in my proverbial shoes. It's merely meant to illustrate the "filter pack" my brain lays over every sound that comes into my ears.</p>
