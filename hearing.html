@@ -2,7 +2,8 @@
   <head>
     <title>Finn's hearing damage demo</title>
       <style>
-        body { background-color: black; color: #fff6c2; font-family: "Trebuchet MS", Verdana, sans-serif;}
+        body { background-color: black; color: #fff6c2; font-family: "Trebuchet MS", Verdana, sans-serif; margin: "50px"; }
+        p { line-height: "120%"; }
       </style>
   </head>
   <body>
@@ -17,6 +18,7 @@
         <li><b>Without adjusting the volume</b>, play the <i>Finn's ears</i> track. You'll hear approximately what my brain does to everything that goes in my ears.</li>
       </ol>
       <objectwidth="300" height="50">
+        <paramname="name" value="Source">
         <paramname="src" value="source.mp3">
         <paramname="autoplay" value="false">
         <paramname="controller" value="true">
@@ -24,6 +26,7 @@
         <embed src="source.mp3" autostart="false" loop="false" width="300" height="50"c ontroller="true" bgcolor="#FFFFFF">
       </object>
       <objectwidth="300" height="50">
+        <paramname="name" value="Finn's ears">
         <paramname="src" value="finn-ears.mp3">
         <paramname="autoplay" value="false">
         <paramname="controller" value="true">
